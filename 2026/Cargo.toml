@@ -1,0 +1,17 @@
+[package]
+name = "hny"
+version = "2026.0.0"
+edition = "2021"
+authors = ["rxxuzi"]
+description = "Happy New Year 2026"
+
+[[bin]]
+name = "hny"
+path = "src/main.rs"
+
+[dependencies]
+crossterm = "0.27"
+
+[profile.release]
+opt-level = 3
+lto = true
